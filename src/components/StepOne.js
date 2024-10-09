@@ -4,7 +4,7 @@ const Step1 = ({ formData, handleChange, errors }) => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex justify-between items-center w-full mb-4 sm:text-sm">
-        <div className="flex items-center bg-blue-500 rounded-tl-md rounded-r-full p-4 px-8 sm:p-1">
+        <div className="flex items-center bg-blue-500 rounded-tl-md rounded-r-full py-4 sm:px-8 px-4">
           <div className="flex items-center justify-center w-8 h-8 bg-white text-blue rounded-full">1</div>
           <p className="ml-2 text-white">Your Profile</p>
         </div>

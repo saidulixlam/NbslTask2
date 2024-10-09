@@ -1,22 +1,21 @@
 import React from 'react';
-import { FaCheckCircle, FaTimesCircle, FaArrowRight } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
 
 const Step2 = ({ formData, handleChange, errors }) => {
   return (
     <div className="flex flex-col items-center">
       <div className="flex justify-between items-center w-full mb-4">
-        <div className="flex items-center bg-blue-500 p-4 px-8">
+        <div className="flex items-center bg-blue-500 py-4 px-2 sm:px-8">
           <div className="flex items-center justify-center w-8 h-8 bg-gray-300 text-white rounded-full">1</div>
-          <p className="ml-2 text-gray-300 hidden sm:block">Your Profile</p>
-        </div>
+           <p className="ml-2 text-gray-300">Your Profile</p>/         </div>
 
-        <div className="flex items-center bg-blue-500 rounded-tl-md rounded-r-full p-4 px-8">
-          <div className="flex items-center justify-center w-8 h-8 bg-white text-blue rounded-full">2</div>
-          <p className="ml-2 text-white">Business Information</p>
-        </div>
+        <div className="flex items-center bg-blue-500 rounded-tl-md rounded-r-full p-4 px-2 sm:px-8">
+           <div className="flex items-center justify-center w-8 h-8 bg-white text-blue rounded-full">2</div>
+         <p className="ml-2 text-white">Business Information</p>
+         </div>
         <div className="flex items-center">
           <div className="flex items-center justify-center w-8 h-8 bg-gray-300 text-white rounded-full">3</div>
-          <p className="ml-2 text-gray-300 hidden sm:block">Additional Users</p>
+           <p className="ml-2 text-gray-300">Additional Users</p>
         </div>
       </div>
       <h4 className="text-lg font-semibold mt-4 text-gray-500">Step 2</h4>

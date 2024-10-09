@@ -3,26 +3,21 @@ import React from 'react';
 const Step1 = ({ formData, handleChange, errors }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="flex justify-between items-center w-full mb-4 flex-wrap">
-        {/* Step 1 */}
-        <div className="flex items-center bg-blue-500 p-2 px-4 sm:p-4 sm:px-8">
-          <div className="flex items-center justify-center w-6 h-6 bg-gray-300 text-white rounded-full">1</div>
-          <p className="ml-1 text-white text-xs sm:text-gray-300">Your Profile</p>
+      <div className="flex justify-between items-center w-full mb-4 sm:text-sm">
+        <div className="flex items-center bg-blue-500 rounded-tl-md rounded-r-full p-4 px-8 sm:p-1">
+          <div className="flex items-center justify-center w-8 h-8 bg-white text-blue rounded-full">1</div>
+          <p className="ml-2 text-white">Your Profile</p>
         </div>
 
-        {/* Step 2 */}
-        <div className="flex items-center bg-blue-500 p-2 px-4 sm:p-4 sm:px-8">
-          <div className="flex items-center justify-center w-6 h-6 bg-white text-blue rounded-full">2</div>
-          <p className="ml-1 text-white text-xs sm:text-gray-300 hidden sm:block">Business Information</p>
+        <div className="flex items-center">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-300 text-white rounded-full">2</div>
+          <p className="ml-2 text-gray-300">Business Information</p>
         </div>
-
-        {/* Step 3 */}
-        <div className="flex items-center p-2 px-4 sm:p-4 sm:px-8">
-          <div className="flex items-center justify-center w-6 h-6 bg-gray-300 text-white rounded-full">3</div>
-          <p className="ml-1 text-gray-300 text-xs hidden sm:block">Additional Users</p>
+        <div className="flex items-center">
+          <div className="flex items-center justify-center w-8 h-8 bg-gray-300 text-white rounded-full">3</div>
+          <p className="ml-2 text-gray-300">Additional Users</p>
         </div>
       </div>
-
       <h4 className="text-lg font-semibold mb-2 text-gray-500">Step 1</h4>
       <h1 className="text-2xl font-bold text-center mb-2">Your Profile</h1>
       <p className="text-center mb-2">Please fill in your details below:</p>

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Step1 from './components/StepOne';
-// import Step2 from './Step2';
 import { MdArrowBackIos, MdArrowForwardIos } from 'react-icons/md';
 import { IoLogoPlaystation } from 'react-icons/io';
 import './App.css';
@@ -45,7 +44,6 @@ const App = () => {
     if (currentStep === 1 && validateStep1()) {
       setCurrentStep(2);
     } else if (currentStep === 2) {
-      // Handle final submission if needed
       console.log('Final Submission:', formData);
     }
   };
@@ -54,7 +52,7 @@ const App = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
     if (errors[name]) {
-      setErrors((prev) => ({ ...prev, [name]: undefined })); // Clear error for the field being changed
+      setErrors((prev) => ({ ...prev, [name]: undefined }));
     }
   };
 
